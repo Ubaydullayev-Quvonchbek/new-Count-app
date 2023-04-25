@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./index.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
+  const [Count, setCount] = useState(0);
+  const inc = () => {
+    if (Count >= 99) {
+      setCount(0);
+    } else {
+      setCount(Count + 1);
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container>
+        <Row className="justify-content-center">
+          <Col lg={4}>
+            <h1 className="Count">{Count}</h1>
+            <button className="inc" onClick={() => inc()}>+</button>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 
