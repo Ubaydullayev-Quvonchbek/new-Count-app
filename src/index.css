@@ -13,7 +13,7 @@ body {
 
 .inc {
     background-color: #33b5e5;
-    border: 2px outset #fff;
+    border: 5px outset #fff;
     color: #fff;
     display: inline;
     width: 400px;
@@ -25,5 +25,5 @@ body {
 }
 
 .inc:active {
-    border: 2px inset #fff;
+    border: 5px inset #fff;
 }
