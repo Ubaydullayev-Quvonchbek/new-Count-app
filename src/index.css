@@ -1,6 +1,24 @@
 body {
-    background-color: #153243;
+    background-image: url(./image/islamic-background.jpg);
+    background-size: cover;
     text-align: center;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    outline: none;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #153243a5;
+    border: 2px solid #ffe;
+    padding: 10px;
 }
 
 .Count {
@@ -8,22 +26,46 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    margin-top: 50px;
 }
 
 .inc {
     background-color: #33b5e5;
-    border: 5px outset #fff;
     color: #fff;
     display: inline;
-    width: 400px;
+    width: 200px;
+    border: none;
     height: 400px;
+    text-align: center;
     font-size: 200px;
-    border-radius: 50%;
+    border-top-left-radius: 50em;
+    border-bottom-left-radius: 50em;
     margin-top: 50px;
     cursor: pointer;
 }
 
-.inc:active {
-    border: 5px inset #fff;
+.res {
+    background-color: #e53333;
+    color: #fff;
+    display: inline;
+    text-align: center;
+    width: 200px;
+    border: none;
+    height: 400px;
+    font-size: 140px;
+    border-top-right-radius: 50em;
+    border-bottom-right-radius: 50em;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.inc:active:focus {
+    background-color: #33b5e5a6;
+}
+
+.res:active:focus {
+    background-color: #e53333a6;
+}
+
+.margin-auto {
+    margin: auto;
 }
