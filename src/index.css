@@ -74,9 +74,10 @@ button {
     .card {
         background-color: #153243a5;
         border: 2px solid #ffe;
+        height: 100%;
         padding: 10px;
         width: 100%;
-        height: 95vh;
+        padding-bottom: 40px;
     }
 
     button {
