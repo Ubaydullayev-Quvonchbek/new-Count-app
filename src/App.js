@@ -15,8 +15,12 @@ function App() {
     }
   }
   const res = () => {
-    setCount(0)
-    new Audio(audio2).play()
+    if (window.confirm("Restart ?")) {
+      setCount(0)
+      new Audio(audio2).play()
+    } else {
+      return
+    }
   }
   return (
     <>
