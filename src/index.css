@@ -69,3 +69,48 @@ button {
 .margin-auto {
     margin: auto;
 }
+
+@media (max-width: 575px) {
+    .card {
+        background-color: #153243a5;
+        border: 2px solid #ffe;
+        padding: 10px;
+        width: 100%;
+        height: 95vh;
+    }
+
+    button {
+        outline: none;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .inc {
+        background-color: #33b5e5;
+        color: #fff;
+        display: inline;
+        width: 200px;
+        border: none;
+        height: 40vh;
+        text-align: center;
+        font-size: 140px;
+        border-top-left-radius: 50em;
+        border-bottom-left-radius: 50em;
+        cursor: pointer;
+    }
+
+    .res {
+        background-color: #e53333;
+        color: #fff;
+        display: inline;
+        text-align: center;
+        width: 200px;
+        border: none;
+        height: 40vh;
+        font-size: 100px;
+        border-top-right-radius: 50em;
+        border-bottom-right-radius: 50em;
+        cursor: pointer;
+    }
+}

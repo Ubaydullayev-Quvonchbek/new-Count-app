@@ -26,7 +26,7 @@ function App() {
             <Col lg={5}>
               <div className="card">
                 <h1 className="Count">{Count}</h1>
-                <div className="d-flex align-items-center margin-auto">
+                <div className="d-flex align-items-center justify-content-center margin-auto w-100">
                   <button className="inc" onClick={() => inc()}>+</button>
                   <button className="res" onClick={() => res()}>↻</button>
                 </div>
